@@ -1,4 +1,4 @@
-package com.example.rentMyCar;
+package com.awa.rentcar;
 
 import org.springframework.data.repository.CrudRepository;
 

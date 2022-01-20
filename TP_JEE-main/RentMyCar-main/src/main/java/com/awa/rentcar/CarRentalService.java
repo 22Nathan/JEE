@@ -1,12 +1,9 @@
-package com.example.rentMyCar;
+package com.awa.rentcar;
 
 import java.util.*;
 
 import org.springframework.web.bind.annotation.*;
-//import org.springframework.web.client.RestTemplate;
-//import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
-//import org.springframework.stereotype.Controller;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.example.rentMyCar;
+package com.awa.rentcar;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -42,61 +42,61 @@ public class RentMyCarApplication {
 
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-		    Date date_debut = simpleDateFormat.parse("2018-09-09");
-		    Date date_fin = simpleDateFormat.parse("2018-09-12");
+		    Date dateDebut1 = simpleDateFormat.parse("2018-09-09");
+		    Date dateFin1 = simpleDateFormat.parse("2018-09-12");
 
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		     
-		    Date date_debut_2 = simpleDateFormat.parse("2020-09-02");
-		    Date date_fin_2 = simpleDateFormat.parse("2021-12-01");
+		    Date dateDebut2 = simpleDateFormat.parse("2020-09-02");
+		    Date dateFin2 = simpleDateFormat.parse("2021-12-01");
 
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			    
-			Dates date = new Dates();		
-			date.setBegin(date_debut);
-			date.setEnd(date_fin);
+			Dates date1 = new Dates();		
+			date1.setBegin(dateDebut1);
+			date1.setEnd(dateFin1);
 		
-			Dates date_2 = new Dates();
-			date_2.setBegin(date_debut_2);
-			date_2.setEnd(date_fin_2);
+			Dates date2 = new Dates();
+			date2.setBegin(dateDebut2);
+			date2.setEnd(dateFin2);
 			
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		
-			Van van_1 = new Van();
-			van_1.setPlateNumber("45B23");
-			van_1.setRented(false);
-			van_1.setBrand("BMW");
-			van_1.setPrice(2313132);
-			van_1.setMaxWeight(400);
+			Van van1 = new Van();
+			van1.setPlateNumber("45B23");
+			van1.setRented(false);
+			van1.setBrand("BMW");
+			van1.setPrice(2313132);
+			van1.setMaxWeight(400);
 
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			
-			Car car_1 = new Car();
-			car_1.setPlateNumber("89A32");
-			car_1.setRented(false);
-			car_1.setBrand("Renault");
-			car_1.setPrice(23400);
-			car_1.setnumberOfSeats(4);
+			Car car1 = new Car();
+			car1.setPlateNumber("89A32");
+			car1.setRented(false);
+			car1.setBrand("Renault");
+			car1.setPrice(23400);
+			car1.setnumberOfSeats(4);
 
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			
-			person1.addDates(date);
-			person2.addDates(date_2);
+			person1.addDates(date1);
+			person2.addDates(date2);
 		 
-			van_1.setDates(date_2);
-			car_1.setDates(date);
+			van1.setDates(date2);
+			car1.setDates(date1);
 			
-			date.setPerson(person1);
-			date_2.setPerson(person2);
+			date1.setPerson(person1);
+			date2.setPerson(person2);
 			
-			date_2.setVehicule(van_1);
+			date2.setVehicule(van1);
 			
-			date.setVehicule(car_1);
+			date1.setVehicule(car1);
 		
-			datesRepository.save(date);
-			datesRepository.save(date_2);
+			datesRepository.save(date1);
+			datesRepository.save(date2);
 
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

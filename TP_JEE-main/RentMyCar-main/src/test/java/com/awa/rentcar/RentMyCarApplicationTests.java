@@ -1,4 +1,4 @@
-package com.example.rentMyCar;
+package com.awa.rentcar;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

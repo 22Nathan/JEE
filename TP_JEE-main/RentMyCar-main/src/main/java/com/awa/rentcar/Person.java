@@ -1,4 +1,4 @@
-package com.example.rentMyCar;
+package com.awa.rentcar;
 
 import java.util.ArrayList;
 import java.util.Collection;
